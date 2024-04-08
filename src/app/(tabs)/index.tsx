@@ -2,8 +2,10 @@ import { useCallback, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 
 import { Filters } from '~/components/filter'
+import { Posts } from '~/components/post'
 import { theme } from '~/styles/theme'
 import { FILTERS } from '~/utils/filter'
+import { POSTS } from '~/utils/posts'
 
 export default function Home() {
   const [filter, setFilter] = useState(FILTERS[0])
@@ -19,7 +21,7 @@ export default function Home() {
         selectedFilter={filter}
         onChange={handleChanceSelectedFilter}
       />
-      {/* <Posts posts={POSTS} /> */}
+      <Posts posts={POSTS} />
     </View>
   )
 }
