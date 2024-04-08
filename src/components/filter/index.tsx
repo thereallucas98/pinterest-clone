@@ -22,8 +22,8 @@ export function Filters({ filters, selectedFilter, onChange }: FilterProps) {
       )}
       horizontal
       style={styles.list}
-      contentContainerStyle={styles.content}
       showsHorizontalScrollIndicator={false}
+      contentContainerStyle={styles.content}
     />
   )
 }

@@ -19,13 +19,14 @@ export default function Home() {
         selectedFilter={filter}
         onChange={handleChanceSelectedFilter}
       />
+      {/* <Posts posts={POSTS} /> */}
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     backgroundColor: theme.colors.black,
     padding: 12,
     paddingTop: 52,
